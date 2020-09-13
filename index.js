@@ -12,6 +12,6 @@ module.exports = function PottyMouth(mod) {
 }
 
 function unfilter(event) {
-	event.message = event.message.replace(/<font>(.+?)<\/font>/gi, '<font></font>$1')
+	event.message = event.message.replace(/<FONT>(.*?)<\/FONT>/gi, '<FONT></FONT>$1')
 	return true
 }
